@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bruno P. Recco | Gestor Ambiental & Geoprocessamento / GIS</title>
+  <meta name="description" content="Portfólio profissional de Bruno P. Recco. Especialista em Gestão Ambiental, Geoprocessamento, Análise Espacial, Sensoriamento Remoto e Cartografia Temática." />
+  <meta name="keywords" content="Bruno Recco, Gestão Ambiental, Geoprocessamento, GIS, QGIS, Cartografia, Sensoriamento Remoto, Ubatuba, NDVI, Hipsometria, Licenciamento Ambiental" />
+  <meta name="author" content="Bruno P. Recco" />
+  
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bruno P. Recco | Gestor Ambiental & Geoprocessamento" />
+  <meta property="og:description" content="Portfólio cartográfico profissional com mapas de localização, temáticos e analíticos." />
+  <meta property="og:image" content="thumbnails/Capa_portifolio_thumb.jpg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Estilos Customizados -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Padrão Cartográfico Vetorial de Fundo -->
+  <div class="geo-bg-pattern" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       CABEÇALHO / NAVEGAÇÃO STICKY
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="#inicio" class="brand-logo" aria-label="Bruno P. Recco - Página Inicial">
+        <div class="brand-badge">
+          <!-- Ícone de Vetor / Satélite Cartográfico -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+            <line x1="9" y1="3" x2="9" y2="18"></line>
+            <line x1="15" y1="6" x2="15" y2="21"></line>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">Bruno P. Recco</span>
+          <span class="brand-tag">Gestão Ambiental & GIS</span>
+        </div>
+      </a>
+
+      <!-- Menu de Navegação -->
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre Mim & Contato</a></li>
+          <li><a href="#galeria" class="nav-link">Galeria de Mapas</a></li>
+        </ul>
+      </nav>
+
+      <!-- Ação Direta WhatsApp no Header -->
+      <div class="header-actions">
+        <a href="https://wa.me/5511998274422" target="_blank" rel="noopener noreferrer" class="header-cta" aria-label="Contato direto via WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+        <!-- Botão Menu Mobile -->
+        <button class="mobile-nav-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         1. PRIMEIRA DOBRA: HERO SECTION
+         ======================================================================= -->
+    <section class="hero-section" id="inicio">
+      <!-- Luzes Atmosféricas -->
+      <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Conteúdo da Esquerda -->
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="status-dot"></span>
+              <span>Portfólio Profissional de Geoprocessamento</span>
+            </div>
+
+            <h1 class="hero-title">Bruno P. Recco</h1>
+
+            <div class="hero-subtitle-wrapper">
+              <span class="hero-subtitle-prefix">Atuação em</span>
+              <span class="typing-text" id="typingText"></span>
+              <span class="typing-cursor">|</span>
+            </div>
+
+            <p class="hero-description">
+              Transformando dados geoespaciais em inteligência territorial estratégica para apoio à tomada de decisões, planejamento ambiental e conservação de ecossistemas.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#galeria" class="btn btn-primary btn-scroll" id="btnExplorarMapas">
+                <span>Explorar Mapas</span>
+                <svg class="btn-arrow-down" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </a>
+              <a href="#sobre" class="btn btn-secondary btn-scroll">
+                <span>Contato</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card Visual da Direita (Mockup QGIS / Satélite Limpo) -->
+          <div class="hero-visual">
+            <div class="hero-visual-card">
+              <div class="hero-card-header">
+                <div class="window-dots">
+                  <span class="window-dot dot-red"></span>
+                  <span class="window-dot dot-yellow"></span>
+                  <span class="window-dot dot-green"></span>
+                </div>
+                <span class="window-title">QGIS • Análise Espacial & MDE</span>
+              </div>
+              <div class="hero-img-frame">
+                <img 
+                  src="thumbnails/hero_gis_monitor.jpg" 
+                  alt="Ambiente de Geoprocessamento QGIS com visualização 3D de relevo costeiro" 
+                  class="hero-capa-img"
+                  width="1200"
+                  height="675"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         2. SEGUNDA DOBRA: SOBRE MIM & CONTATO
+         ======================================================================= -->
+    <section class="section-wrapper" id="sobre">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Perfil & Conexão</span>
+          <h2 class="section-title">Sobre Mim e Contato</h2>
+          <p class="section-subtitle">
+            Conheça minha trajetória técnica em análise territorial e os canais diretos para colaboração profissional.
+          </p>
+        </div>
+
+        <div class="about-contact-grid">
+          <!-- Coluna da Esquerda: Sobre Mim -->
+          <div class="about-card">
+            <div>
+              <div class="about-text">
+                <p>
+                  Sou <strong>Gestor Ambiental</strong>, com atuação voltada ao geoprocessamento, análise espacial e gestão ambiental. Trabalho com a produção e interpretação de mapas, organização de dados geográficos, georreferenciamento e elaboração de estudos e diagnósticos que auxiliam na compreensão do território.
+                </p>
+                <p>
+                  Minha experiência profissional está especialmente relacionada ao licenciamento ambiental e à análise territorial, buscando integrar tecnologia, conhecimento técnico e uma visão prática das questões ambientais.
+                </p>
+                <div class="about-quote-block">
+                  “Acredito que mapas não são apenas representações do território, mas ferramentas para transformar dados em informação e apoiar decisões mais conscientes e sustentáveis.”
+                </div>
+              </div>
+            </div>
+
+            <!-- Tags de Especialidades Técnicas -->
+            <div class="skills-wrapper">
+              <div class="skills-title">Principais Competências Técnicas</div>
+              <div class="skills-pills">
+                <span class="skill-pill">Geoprocessamento & SIG</span>
+                <span class="skill-pill">QGIS</span>
+                <span class="skill-pill">Sensoriamento Remoto</span>
+                <span class="skill-pill">Licenciamento Ambiental</span>
+                <span class="skill-pill">Análise Espacial</span>
+                <span class="skill-pill">SIRGAS 2000</span>
+                <span class="skill-pill">Modelos Digitais de Elevação (MDE)</span>
+                <span class="skill-pill">Índices de Vegetação (NDVI)</span>
+                <span class="skill-pill">Zoneamento Ecológico-Econômico</span>
+                <span class="skill-pill">Cartografia Temática</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna da Direita: Contato & Redes Sociais -->
+          <div class="contact-column">
+            <!-- Card WhatsApp -->
+            <div class="contact-card">
+              <div class="contact-card-header">
+                <div class="contact-icon-box whatsapp-box">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  </svg>
+                </div>
+                <div class="contact-meta">
+                  <h4>WhatsApp Direto</h4>
+                  <p>(11) 99827-4422</p>
+                </div>
+              </div>
+
+              <div class="contact-link-row">
+                <a href="https://wa.me/5511998274422" target="_blank" rel="noopener noreferrer" class="contact-action-btn whatsapp-btn">
+                  <span>Conversar no WhatsApp</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <button type="button" class="copy-phone-btn" id="copyPhoneBtn" aria-label="Copiar número de telefone">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Copiar</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card Email -->
+            <div class="contact-card">
+              <div class="contact-card-header">
+                <div class="contact-icon-box email-box">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-meta">
+                  <h4>E-mail</h4>
+                  <p>recco.ambiental@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact-link-row">
+                <a href="mailto:recco.ambiental@gmail.com" class="contact-action-btn email-btn">
+                  <span>Enviar E-mail</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <button type="button" class="copy-phone-btn" id="copyEmailBtn" aria-label="Copiar endereço de e-mail">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Copiar</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card LinkedIn -->
+            <div class="contact-card">
+              <div class="contact-card-header">
+                <div class="contact-icon-box linkedin-box">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="contact-meta">
+                  <h4>LinkedIn Profissional</h4>
+                  <p>bruno-recco-1b012a98</p>
+                </div>
+              </div>
+
+              <div class="contact-link-row">
+                <a href="https://www.linkedin.com/in/bruno-recco-1b012a98/" target="_blank" rel="noopener noreferrer" class="contact-action-btn linkedin-btn">
+                  <span>Acessar Perfil no LinkedIn</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card de Disponibilidade -->
+            <div class="availability-card">
+              <div class="availability-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+              </div>
+              <div class="availability-content">
+                <h5>Disponível para Projetos & Consultorias</h5>
+                <p>Estudos ambientais, laudos técnicos, mapeamentos especializados e estruturação de bases SIG.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. TERCEIRA DOBRA: GALERIA DE MAPAS
+         ======================================================================= -->
+    <section class="gallery-section" id="galeria">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Portfólio Cartográfico</span>
+          <h2 class="section-title">Galeria de Mapas</h2>
+          <p class="section-subtitle">
+            Explore a coleção de produtos cartográficos desenvolvidos, com rigor técnico, dados oficiais e análises espaciais aplicadas.
+          </p>
+        </div>
+
+        <!-- Barra de Botões de Filtro -->
+        <div class="filter-bar-container">
+          <div class="filter-bar" role="tablist" aria-label="Filtrar mapas por categoria">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+              <span>Todos os mapas</span>
+              <span class="filter-count" id="countAll">9</span>
+            </button>
+            <button class="filter-btn" data-filter="localizacao" role="tab" aria-selected="false">
+              <span>Mapas de Localização</span>
+              <span class="filter-count" id="countLoc">2</span>
+            </button>
+            <button class="filter-btn" data-filter="tematico" role="tab" aria-selected="false">
+              <span>Mapas Temáticos</span>
+              <span class="filter-count" id="countTem">3</span>
+            </button>
+            <button class="filter-btn" data-filter="analitico" role="tab" aria-selected="false">
+              <span>Mapas Analíticos</span>
+              <span class="filter-count" id="countAna">4</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Grid de Cards dos Mapas (Injetado via data.js) -->
+        <div class="maps-grid" id="mapsGrid" aria-live="polite">
+          <!-- Cards gerados dinamicamente com suporte a fallback acessível -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       MODAL LIGHTBOX EM TELA CHEIA (Alta Resolução + Zoom/Pan + Metadados)
+       ========================================================================= -->
+  <div class="modal-backdrop" id="mapModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalHeaderTitle">
+    <div class="modal-container">
+      
+      <!-- Topo do Modal -->
+      <header class="modal-header">
+        <div class="modal-header-left">
+          <span class="modal-category-badge" id="modalCategoryBadge">Categoria</span>
+          <h3 class="modal-header-title" id="modalHeaderTitle">Título do Mapa</h3>
+        </div>
+        <div class="modal-header-actions">
+          <!-- Abrir original em nova aba -->
+          <a href="#" target="_blank" rel="noopener noreferrer" class="modal-btn-icon" id="modalOpenTabBtn" title="Abrir imagem original em nova aba" aria-label="Abrir original em nova aba">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+          <!-- Fechar modal -->
+          <button class="modal-btn-icon modal-btn-close" id="modalCloseBtn" title="Fechar visualizador (Esc)" aria-label="Fechar visualizador">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Corpo Principal (Visualizador à Esquerda, Informações e Metadados à Direita) -->
+      <div class="modal-body">
+        
+        <!-- Viewport da Imagem com Zoom e Pan -->
+        <div class="modal-viewport" id="modalViewport">
+          <div class="modal-img-container" id="modalImgContainer" title="Use a roda do mouse para dar zoom e arraste para navegar">
+            <img src="" alt="" class="modal-hires-img" id="modalHiresImg" />
+          </div>
+
+          <!-- Spinner de Carregamento de Imagem HD -->
+          <div class="modal-loading-spinner" id="modalSpinner">
+            <div class="spinner-icon"></div>
+            <span>Carregando mapa em alta resolução...</span>
+          </div>
+
+          <!-- Barra de Ferramentas Flutuante de Zoom -->
+          <div class="zoom-controls-bar">
+            <button class="zoom-btn" id="zoomOutBtn" title="Reduzir Zoom (-)" aria-label="Reduzir zoom">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <span class="zoom-level-label" id="zoomLevelLabel">100%</span>
+            <button class="zoom-btn" id="zoomInBtn" title="Aumentar Zoom (+)" aria-label="Aumentar zoom">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <button class="zoom-btn" id="zoomResetBtn" title="Ajustar à Tela (Reset)" aria-label="Ajustar à tela">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <polyline points="9 21 3 21 3 15"></polyline>
+                <line x1="21" y1="3" x2="14" y2="10"></line>
+                <line x1="3" y1="21" x2="10" y2="14"></line>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Botões de Navegação Anterior / Próximo -->
+          <button class="modal-nav-btn modal-nav-prev" id="modalPrevBtn" title="Mapa Anterior (Seta Esquerda)" aria-label="Mapa Anterior">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="modal-nav-btn modal-nav-next" id="modalNextBtn" title="Próximo Mapa (Seta Direita)" aria-label="Próximo Mapa">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Painel Lateral de Informações e Metadados -->
+        <aside class="modal-info-panel">
+          <div>
+            <h2 class="modal-info-title" id="modalInfoTitle">Título do Mapa</h2>
+            <div class="modal-info-subtitle" id="modalInfoSubtitle">Subtítulo ou Tema</div>
+          </div>
+
+          <!-- Descrição Completa -->
+          <div class="modal-desc-section">
+            <div class="modal-section-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>Descrição Cartográfica Completa</span>
+            </div>
+            <div class="modal-desc-paragraphs" id="modalDescContainer">
+              <!-- Parágrafos injetados dinamicamente -->
+            </div>
+          </div>
+
+          <!-- Tabela de Metadados Técnicos -->
+          <div class="modal-metadata-section">
+            <div class="modal-section-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              <span>Metadados Técnicos & Fontes</span>
+            </div>
+            <div class="metadata-table-wrapper">
+              <table class="metadata-table">
+                <tbody id="modalMetadataTable">
+                  <!-- Linhas injetadas dinamicamente -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Tags de Palavras-Chave -->
+          <div class="modal-tags-section">
+            <div class="modal-section-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                <line x1="7" y1="7" x2="7.01" y2="7"></line>
+              </svg>
+              <span>Indexação & Palavras-chave</span>
+            </div>
+            <div class="modal-tags" id="modalTagsContainer">
+              <!-- Tags injetadas dinamicamente -->
+            </div>
+          </div>
+
+          <!-- Ação de Download -->
+          <div class="modal-download-actions">
+            <a href="#" download class="btn btn-primary" id="modalDownloadBtn" style="flex: 1;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Baixar Mapa em Alta Resolução</span>
+            </a>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       RODAPÉ (FOOTER)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="brand-logo">
+            <div class="brand-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+                <line x1="9" y1="3" x2="9" y2="18"></line>
+                <line x1="15" y1="6" x2="15" y2="21"></line>
+              </svg>
+            </div>
+            <div class="brand-info">
+              <span class="brand-name">Bruno P. Recco</span>
+              <span class="brand-tag">Gestão Ambiental & GIS</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Transformando dados em informação e apoiando decisões mais conscientes e sustentáveis através da análise espacial e do geoprocessamento.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Navegação Rápida</h5>
+          <ul class="footer-nav-list">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#sobre">Contato & Redes Sociais</a></li>
+            <li><a href="#galeria">Galeria de Mapas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Canais de Atendimento</h5>
+          <ul class="footer-nav-list">
+            <li><a href="https://wa.me/5511998274422" target="_blank" rel="noopener noreferrer">WhatsApp: (11) 99827-4422</a></li>
+            <li><a href="https://www.linkedin.com/in/bruno-recco-1b012a98/" target="_blank" rel="noopener noreferrer">LinkedIn: bruno-recco</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Bruno P. Recco. Todos os direitos reservados.
+        </div>
+        <a href="#inicio" class="footer-back-top">
+          <span>Voltar ao topo</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts do Portfólio -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
