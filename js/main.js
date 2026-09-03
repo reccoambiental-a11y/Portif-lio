@@ -24,40 +24,62 @@ function initTypingEffect() {
     'Análise Espacial'
   ];
 
-  let wordIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  const typeSpeed = 95;
-  const deleteSpeed = 45;
-  const pauseEnd = 2200;
-  const pauseStart = 450;
+  const TYPE_SPEED   = 90;   // ms por caractere digitando
+  const DELETE_SPEED = 40;   // ms por caractere apagando
+  const PAUSE_AFTER  = 2400; // ms pausa após palavra completa
+  const PAUSE_BEFORE = 500;  // ms pausa antes de digitar próxima palavra
 
-  function typeCycle() {
+  let wordIndex  = 0;
+  let charIndex  = 0;
+  let isDeleting = false;
+  let isPaused   = false;
+
+  function tick() {
+    if (isPaused) return; // segurança extra — nunca deve ocorrer
+
     const currentWord = words[wordIndex];
 
     if (isDeleting) {
-      typingElement.textContent = currentWord.substring(0, charIndex - 1);
+      // Apaga um caractere
       charIndex--;
+      typingElement.textContent = currentWord.substring(0, charIndex);
+
+      if (charIndex === 0) {
+        // Palavra totalmente apagada → avança para a próxima e pausa antes de digitar
+        isDeleting = false;
+        wordIndex  = (wordIndex + 1) % words.length;
+        isPaused   = true;
+        setTimeout(() => {
+          isPaused = false;
+          tick();
+        }, PAUSE_BEFORE);
+        return;
+      }
+
+      setTimeout(tick, DELETE_SPEED);
+
     } else {
-      typingElement.textContent = currentWord.substring(0, charIndex + 1);
+      // Digita um caractere
       charIndex++;
+      typingElement.textContent = currentWord.substring(0, charIndex);
+
+      if (charIndex === currentWord.length) {
+        // Palavra completa → pausa antes de apagar
+        isPaused = true;
+        setTimeout(() => {
+          isPaused   = false;
+          isDeleting = true;
+          tick();
+        }, PAUSE_AFTER);
+        return;
+      }
+
+      setTimeout(tick, TYPE_SPEED);
     }
-
-    let delay = isDeleting ? deleteSpeed : typeSpeed;
-
-    if (!isDeleting && charIndex === currentWord.length) {
-      delay = pauseEnd;
-      isDeleting = true;
-    } else if (isDeleting && charIndex === 0) {
-      isDeleting = false;
-      wordIndex = (wordIndex + 1) % words.length;
-      delay = pauseStart;
-    }
-
-    setTimeout(typeCycle, delay);
   }
 
-  typeCycle();
+  // Inicia com um pequeno delay para a página carregar visualmente
+  setTimeout(tick, 600);
 }
 
 /* --------------------------------------------------------------------------
